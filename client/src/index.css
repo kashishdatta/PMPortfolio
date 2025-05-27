@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 84% 5%; /* #0F172A */
+  --foreground: 210 40% 98%; /* #F8FAFC */
+  --muted: 215 28% 17%; /* #1E293B */
+  --muted-foreground: 215 20% 65%; /* #94A3B8 */
+  --popover: 222 84% 5%; /* #0F172A */
+  --popover-foreground: 210 40% 98%; /* #F8FAFC */
+  --card: 215 28% 17%; /* #1E293B */
+  --card-foreground: 210 40% 98%; /* #F8FAFC */
+  --border: 215 28% 17%; /* #1E293B */
+  --input: 215 28% 17%; /* #1E293B */
+  --primary: 244 47% 62%; /* #6366F1 */
+  --primary-foreground: 210 40% 98%; /* #F8FAFC */
+  --secondary: 252 56% 57%; /* #8B5CF6 */
+  --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+  --accent: 41 96% 48%; /* #F59E0B */
+  --accent-foreground: 222 84% 5%; /* #0F172A */
+  --destructive: 0 62.8% 30.6%; /* #7F1D1D */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 244 47% 62%; /* #6366F1 */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 84% 5%; /* #0F172A */
+  --foreground: 210 40% 98%; /* #F8FAFC */
+  --muted: 215 28% 17%; /* #1E293B */
+  --muted-foreground: 215 20% 65%; /* #94A3B8 */
+  --popover: 222 84% 5%; /* #0F172A */
+  --popover-foreground: 210 40% 98%; /* #F8FAFC */
+  --card: 215 28% 17%; /* #1E293B */
+  --card-foreground: 210 40% 98%; /* #F8FAFC */
+  --border: 215 28% 17%; /* #1E293B */
+  --input: 215 28% 17%; /* #1E293B */
+  --primary: 244 47% 62%; /* #6366F1 */
+  --primary-foreground: 210 40% 98%; /* #F8FAFC */
+  --secondary: 252 56% 57%; /* #8B5CF6 */
+  --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+  --accent: 41 96% 48%; /* #F59E0B */
+  --accent-foreground: 222 84% 5%; /* #0F172A */
+  --destructive: 0 62.8% 30.6%; /* #7F1D1D */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 244 47% 62%; /* #6366F1 */
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(50px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Parallax effect */
+.parallax {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Skill bar animations */
+.skill-bar {
+  transition: width 2s ease-in-out;
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: clamp(2rem, 8vw, 4rem);
+  }
+}
+
+/* Smooth scrolling improvements */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Timeline styles */
+.timeline-line {
+  background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+}
+
+/* Contact form focus styles */
+.contact-input:focus {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsla(var(--primary), 0.1);
+}
+
+/* Navigation active state */
+.nav-link-active {
+  color: hsl(var(--primary));
+  font-weight: 600;
+}
