@@ -4,9 +4,8 @@ import LoadingScreen from "@/components/ui/loading-screen";
 import Navigation from "@/components/layout/navigation";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
-import Projects from "@/components/sections/projects";
-import CaseStudies from "@/components/sections/case-studies";
 import TechnicalProjects from "@/components/sections/technical-projects";
+import CaseStudies from "@/components/sections/case-studies";
 import Experience from "@/components/sections/experience";
 import Certifications from "@/components/sections/certifications";
 import ResearchPapers from "@/components/sections/research-papers";
@@ -39,9 +38,8 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Projects />
-        <CaseStudies />
         <TechnicalProjects />
+        <CaseStudies />
         <Experience />
         <Certifications />
         <ResearchPapers />

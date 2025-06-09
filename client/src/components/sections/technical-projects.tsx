@@ -97,7 +97,7 @@ export default function TechnicalProjects() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="technical-projects" className="py-20 light-accent-bg dark:bg-card">
+    <section id="projects" className="py-20 light-accent-bg dark:bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -106,7 +106,7 @@ export default function TechnicalProjects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Technical Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Engineering solutions that bridge the gap between product strategy and technical implementation.
           </p>
