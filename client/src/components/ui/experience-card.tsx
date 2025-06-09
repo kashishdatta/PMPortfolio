@@ -42,7 +42,7 @@ export default function ExperienceCard({ experience, index, isInView }: Experien
           {experience.tags.map((tag) => (
             <Badge
               key={tag}
-              className={`${cardColor}/20 text-${cardColor.replace('bg-', '')} border-none`}
+              className="bg-primary/20 text-primary border-none"
             >
               {tag}
             </Badge>
@@ -59,7 +59,7 @@ export default function ExperienceCard({ experience, index, isInView }: Experien
               transition={{ duration: 0.4, delay: index * 0.1 + achievementIndex * 0.05 }}
               className="flex items-center space-x-2"
             >
-              <CheckCircle className={`h-4 w-4 ${cardColor.replace('bg-', 'text-')}`} />
+              <CheckCircle className="h-4 w-4 text-primary" />
               <span className="text-sm text-foreground/80">{achievement}</span>
             </motion.div>
           ))}
