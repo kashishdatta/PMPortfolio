@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import TimelineItem from "@/components/ui/timeline-item";
+import ExperienceCard from "@/components/ui/experience-card";
 
 const experiences = [
   {
@@ -10,7 +10,7 @@ const experiences = [
     period: "2022 - Present",
     description: "Leading product strategy for flagship SaaS platform serving 50K+ users. Drove 45% increase in user engagement through data-driven feature development.",
     tags: ["Strategy", "Leadership"],
-    side: "right"
+    achievements: ["45% increase in user engagement", "Led team of 15+", "Launched 3 major features"]
   },
   {
     title: "Product Manager", 
@@ -18,7 +18,7 @@ const experiences = [
     period: "2020 - 2022",
     description: "Built product from 0 to 1, establishing product-market fit and scaling to 10K+ active users. Managed cross-functional team of 12 people.",
     tags: ["0-to-1 Product", "Team Management"],
-    side: "left"
+    achievements: ["10K+ active users", "Product-market fit", "Team of 12 people"]
   },
   {
     title: "Associate Product Manager",
@@ -26,7 +26,7 @@ const experiences = [
     period: "2019 - 2020", 
     description: "Focused on user research and analytics, conducting 50+ user interviews and implementing A/B testing framework that improved conversion by 30%.",
     tags: ["User Research", "Analytics"],
-    side: "right"
+    achievements: ["50+ user interviews", "30% conversion improvement", "A/B testing framework"]
   },
   {
     title: "Business Analyst",
@@ -34,7 +34,23 @@ const experiences = [
     period: "2018 - 2019",
     description: "Started my journey in product development, working on requirements gathering and market analysis for various client projects.",
     tags: ["Business Analysis", "Market Research"],
-    side: "left"
+    achievements: ["5+ client projects", "Market analysis", "Requirements gathering"]
+  },
+  {
+    title: "Marketing Coordinator",
+    company: "Creative Agency",
+    period: "2017 - 2018",
+    description: "Managed digital marketing campaigns and analyzed customer data to optimize conversion rates and customer acquisition.",
+    tags: ["Digital Marketing", "Data Analysis"],
+    achievements: ["20+ campaigns", "Customer acquisition", "Data optimization"]
+  },
+  {
+    title: "Data Analyst Intern",
+    company: "Financial Services",
+    period: "2016 - 2017",
+    description: "Analyzed financial data, created dashboards, and supported decision-making processes with data-driven insights.",
+    tags: ["Data Analysis", "Financial Modeling"],
+    achievements: ["Financial dashboards", "Data insights", "Process optimization"]
   }
 ];
 
@@ -43,7 +59,7 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="experience" className="py-20 bg-card">
+    <section id="experience" className="py-20 light-accent-bg dark:bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -58,26 +74,16 @@ export default function Experience() {
           </p>
         </motion.div>
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 timeline-line"></div>
-
-          {/* Timeline items */}
-          <div className="space-y-12">
-            {experiences.map((experience, index) => (
-              <motion.div
-                key={experience.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <TimelineItem
-                  experience={experience}
-                  index={index}
-                />
-              </motion.div>
-            ))}
-          </div>
+        {/* Experience Cards Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={experience.title}
+              experience={experience}
+              index={index}
+              isInView={isInView}
+            />
+          ))}
         </div>
       </div>
     </section>

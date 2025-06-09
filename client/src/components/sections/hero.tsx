@@ -39,8 +39,10 @@ export default function Hero() {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const jobTitles = ["Product Manager", "Marketing Analyst", "Data Analyst"];
+
   return (
-    <section id="home" className="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen light-gradient-bg dark:gradient-bg flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -112,12 +114,18 @@ export default function Hero() {
             Hi, I'm <span className="gradient-text">Kay</span>
           </motion.h1>
 
-          <motion.p
+          <motion.div
             variants={itemVariants}
-            className="text-xl md:text-2xl text-muted-foreground mb-8"
+            className="text-xl md:text-2xl text-muted-foreground mb-8 h-8"
           >
-            Product Manager & Creative Problem Solver
-          </motion.p>
+            <TypingAnimation
+              texts={jobTitles}
+              typingSpeed={100}
+              deletingSpeed={50}
+              delayBetweenTexts={2000}
+              className="gradient-text font-semibold"
+            />
+          </motion.div>
 
           <motion.p
             variants={itemVariants}

@@ -37,7 +37,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section id="about" className="py-20 bg-card">
+    <section id="about" className="py-20 light-accent-bg dark:bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
