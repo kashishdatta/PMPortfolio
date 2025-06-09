@@ -5,7 +5,11 @@ import Navigation from "@/components/layout/navigation";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Projects from "@/components/sections/projects";
+import CaseStudies from "@/components/sections/case-studies";
+import TechnicalProjects from "@/components/sections/technical-projects";
 import Experience from "@/components/sections/experience";
+import Certifications from "@/components/sections/certifications";
+import ResearchPapers from "@/components/sections/research-papers";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/layout/footer";
 
@@ -36,7 +40,11 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <CaseStudies />
+        <TechnicalProjects />
         <Experience />
+        <Certifications />
+        <ResearchPapers />
         <Contact />
       </main>
       <Footer />
