@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TypingAnimation from "@/components/ui/typing-animation";
 
 const containerVariants = {
   hidden: { opacity: 0 },
