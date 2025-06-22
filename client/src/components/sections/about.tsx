@@ -169,7 +169,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 gradient-text underline underline-offset-8">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 underline underline-offset-8" style={{ color: '#3A0CA3' }}>About Me</h2>
         </motion.div>
 
         <motion.div
@@ -199,14 +199,18 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-10"
         >
-          <h3 className="text-3xl md:text-4xl font-bold mb-8 gradient-text text-center">My Skills</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center" style={{ color: '#3A0CA3' }}>My Skills</h3>
           <div className="flex justify-center space-x-4 mb-12">
             {skillCategories.map((category) => (
               <button
                 key={category.name}
                 onClick={() => handleSkillCategoryChange(category.name)}
-                className={`py-2 px-6 rounded-lg text-sm font-medium transition-colors ${activeSkillCategory === category.name ? 'shadow-lg' : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600'}`}
-                style={activeSkillCategory === category.name ? { backgroundColor: '#FFD166', color: '#333' } : {}}
+                className="py-2 px-6 rounded-lg text-sm font-medium transition-colors border-2"
+                style={
+                  activeSkillCategory === category.name
+                    ? { backgroundColor: '#FFD166', borderColor: '#FFD166', color: '#333' }
+                    : { backgroundColor: 'transparent', borderColor: '#FFD166', color: '#666' }
+                }
               >
                 {category.name}
               </button>

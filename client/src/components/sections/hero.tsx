@@ -168,9 +168,7 @@ export default function Hero() {
                     size="lg"
                     onClick={handleGetInTouch}
                     className="px-8 py-4 font-semibold transform hover:scale-105 transition-all duration-300 border-2"
-                    style={{ borderColor: '#FFD166', color: '#000', backgroundColor: 'transparent' }}
-                    onMouseOver={e => { e.currentTarget.style.backgroundColor = '#fff9e6'; e.currentTarget.style.color = '#333'; }}
-                    onMouseOut={e => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#000'; }}
+                    style={{ backgroundColor: 'transparent', borderColor: '#FFD166', color: '#666' }}
                   >
                     Get in Touch
                   </Button>

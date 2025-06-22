@@ -66,7 +66,7 @@ export default function ResearchPapers() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Published Research</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 underline underline-offset-8" style={{ color: '#3A0CA3' }}>Published Research</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
@@ -101,13 +101,13 @@ export default function ResearchPapers() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold mb-3 gradient-text leading-tight">
+                <h3 className="text-xl font-bold mb-3 leading-tight" style={{ color: '#3b82f6' }}>
                   {paper.title}
                 </h3>
 
                 <div className="space-y-2 mb-4 text-sm text-muted-foreground">
                   <div className="flex items-center">
-                    <Users className="h-4 w-4 mr-2" />
+                    <Users className="h-4 w-4 mr-2" style={{ color: '#FFD166' }}/>
                     <span>{paper.authors.join(", ")}</span>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function ResearchPapers() {
                 <div className="flex flex-wrap gap-2">
                   <Button
                     size="sm"
-                    className="bg-primary hover:bg-primary/80"
+                    style={{ backgroundColor: '#FFD166', color: '#333' }}
                     asChild
                   >
                     <a href={paper.pdfUrl} target="_blank" rel="noopener noreferrer">
@@ -126,7 +126,8 @@ export default function ResearchPapers() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="border-2"
+                    style={{ backgroundColor: 'transparent', borderColor: '#FFD166', color: '#666' }}
                     asChild
                   >
                     <a href={paper.journalUrl} target="_blank" rel="noopener noreferrer">

@@ -39,7 +39,7 @@ export default function Education() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Education</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 underline underline-offset-8" style={{ color: '#3A0CA3' }}>Education</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             My academic journey and qualifications
           </p>
@@ -72,15 +72,15 @@ export default function Education() {
                 
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
-                    <Calendar className="w-4 h-4" />
+                    <Calendar className="w-4 h-4" style={{ color: '#FFD166' }}/>
                     <span>{edu.period}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
-                    <MapPin className="w-4 h-4" />
+                    <MapPin className="w-4 h-4" style={{ color: '#FFD166' }}/>
                     <span>{edu.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
-                    <GraduationCap className="w-4 h-4" />
+                    <GraduationCap className="w-4 h-4" style={{ color: '#FFD166' }}/>
                     <span>GPA: {edu.gpa}</span>
                   </div>
                 </div>

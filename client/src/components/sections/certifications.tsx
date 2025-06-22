@@ -58,7 +58,7 @@ export default function Certifications() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Certifications & Credentials</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 underline underline-offset-8" style={{ color: '#3A0CA3' }}>Certifications & Credentials</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Professional certifications that validate my expertise across product management, analytics, and technology.
           </p>
@@ -80,11 +80,11 @@ export default function Certifications() {
                   alt={cert.issuer}
                   className="w-16 h-16 rounded-lg object-cover"
                 />
-                <h3 className="text-lg font-bold text-center gradient-text">{cert.title}</h3>
+                <h3 className="text-lg font-bold text-center" style={{ color: '#3b82f6' }}>{cert.title}</h3>
                 <Button
-                  variant="outline"
                   size="sm"
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  className="w-full border-2"
+                  style={{ backgroundColor: 'transparent', borderColor: '#FFD166', color: '#666' }}
                   asChild
                 >
                   <a href={cert.verificationUrl} target="_blank" rel="noopener noreferrer">
