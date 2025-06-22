@@ -1,15 +1,10 @@
 services:
   - type: web
-    name: portfolio-client
-    env: static
-    buildCommand: cd client && npm install && npm run build
-    staticPublishPath: client/dist
-
-  - type: web
-    name: portfolio-server
+    name: pm-portfolio
     env: node
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm run start
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_VERSION
-        value: 18
+        value: "22.16.0"

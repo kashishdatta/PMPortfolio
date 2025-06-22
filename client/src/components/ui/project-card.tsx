@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -8,6 +8,7 @@ interface Project {
   description: string;
   tags: string[];
   metrics: string;
+  githubUrl?: string;
 }
 
 interface ProjectCardProps {
@@ -45,18 +46,31 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
         
-        <Button
-          variant="ghost"
-          className="text-primary hover:text-primary-foreground hover:bg-primary transition-all duration-300 p-0 h-auto font-semibold group"
-        >
-          View Case Study
-          <motion.div
-            whileHover={{ x: 5 }}
-            className="ml-2"
+        <div className="flex items-center gap-4 mt-4">
+          <Button
+            variant="ghost"
+            className="text-primary hover:text-primary-foreground hover:bg-primary transition-all duration-300 p-0 h-auto font-semibold group"
           >
-            <ArrowRight className="h-4 w-4" />
-          </motion.div>
-        </Button>
+            View Case Study
+            <motion.div
+              whileHover={{ x: 5 }}
+              className="ml-2"
+            >
+              <ArrowRight className="h-4 w-4" />
+            </motion.div>
+          </Button>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-foreground/80 hover:text-foreground"
+            >
+              <Github className="h-4 w-4 mr-2" />
+              Code
+            </Button>
+          </a>
+        </div>
       </div>
     </motion.div>
   );
