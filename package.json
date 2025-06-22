@@ -4,8 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "bash -c 'source $HOME/.nvm/nvm.sh && nvm use 20 && NODE_ENV=development node -v && tsx server/index.ts'",
+    "dev": "npm run build:server && NODE_ENV=development node dist/server/index.js",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build:server": "esbuild server/index.ts --platform=node --bundle --packages=external --format=esm --outdir=dist/server",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
     "db:push": "cross-env NODE_ENV=development drizzle-kit push"
@@ -51,7 +52,7 @@
     "drizzle-orm": "^0.39.1",
     "drizzle-zod": "^0.7.0",
     "embla-carousel-react": "^8.6.0",
-    "esbuild-wasm": "^0.20.2",
+    "esbuild": "^0.25.5",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "framer-motion": "^11.13.1",
