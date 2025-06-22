@@ -4,7 +4,6 @@
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
-    "noEmit": true,
     "module": "ESNext",
     "strict": true,
     "lib": ["esnext", "dom", "dom.iterable"],
@@ -14,6 +13,9 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "types": ["node", "vite/client"],
+    "outDir": "./server/dist",              // ✅ Output directory
+    "rootDir": "./server",                  // ✅ Required to separate inputs from outputs
+    "noEmit": false,                        // ✅ MUST allow emitting compiled JS
     "paths": {
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"]
