@@ -7,89 +7,48 @@ import { Badge } from "@/components/ui/badge";
 
 const researchPapers = [
   {
-    title: "The Impact of AI-Driven Personalization on E-commerce Conversion Rates: A Multi-Platform Analysis",
-    authors: ["Kay Johnson", "Dr. Sarah Chen", "Prof. Michael Rodriguez"],
-    journal: "Journal of Digital Commerce Research",
+    title: "Atmospheric Correction Of Sentinal-2 Satellite Data Using Deep Learning",
+    authors: ["Yaksh Shah", "Kashish Datta", "Jugal Ghadhavi", "Sujal Vadgama"],
+    journal: "International Journal of Computer Applications",
+    year: "2025",
+    volume: "Vol. 86, No. 78",
+    pages: "pp. 21-26",
+    doi: "10.5120/ijca2025924648",
+    abstract: "Remote sensing relies heavily on Atmospheric Correction (AC) to ensure accurate estimation of land Surface Reflectance (SR) for various applications. Conventional AC methods, while effective, are computationally expensive and require extensive atmospheric parameters that can be challenging to estimate accurately. This research proposes a novel deep learning model for AC that eliminates the need for explicit atmospheric parameter estimation. Our approach utilizes a Pix2Pix architecture trained on a diverse dataset of Sentinel-2 images covering all states in India, collected via Google Earth Engine. The model includes four bands (red, green, blue, and visible near-infrared) and directly predicts SR values from Top-of-Atmosphere (TOA) reflectance. The model demonstrated promising results, accurately estimating SR values across various scenarios. Evaluation metrics showed significant improvements, with mean Structural Similarity Index (SSIM) increasing from - 0.0025 to 0.961 and mean Peak Signal-to-Noise Ratio (PSNR) rising from 11.0188 dB to 42.14 dB post-training. This approach not only simplifies the AC process but also achieves comparable or superior performance to traditional physics- based methods. The experimental findings underscore the potential of deep learning as a robust and efficient alternative for atmospheric correction in remote sensing applications, offering possibilities for faster processing of large satellite image datasets. This study contributes to the application of artificial intelligence in remote sensing, paving the way for more accessible and efficient atmospheric correction methods. Future work could explore the model's adaptability to other sensors, incorporation of temporal data, and integration with traditional physics-based models.",
+    keywords: ["Computer Vision in Remote Sensing", "AI for Space Applications", "GPix2Pix GAN", "Deep Learning in Earth Observation", "Climate Data Analysis"],
+    status: "Published",
+    pdfUrl: "https://www.ijcaonline.org/archives/volume186/number78/shah-2025-ijca-924648.pdf",
+    journalUrl: "https://www.ijcaonline.org",
+    image: "https://ijca.phdfocus.com/media/journal_logo/IJCA_logo_RT65_copy.png"
+  },
+  {
+    title: "Classification and Analysis of Solar X-ray Monitoring Data for Intensity Monitoring",
+    authors: ["Kashish Datta", "Aadityasinh Jadeja", "Duttresh Sapra", "Dr. Zankhana Shah"],
+    journal: "International Journal For Research in Applied Science and Engineering Technology",
     year: "2023",
-    volume: "Vol. 15, Issue 3",
-    pages: "pp. 145-162",
-    doi: "10.1016/j.jdcr.2023.03.012",
-    abstract: "This study examines the effectiveness of AI-driven personalization algorithms across multiple e-commerce platforms, analyzing conversion rate improvements and user engagement metrics. Our research demonstrates a 34% average increase in conversion rates when implementing machine learning-based recommendation systems.",
-    keywords: ["AI Personalization", "E-commerce", "Machine Learning", "Conversion Optimization", "User Behavior"],
-    citations: 47,
-    downloads: 1250,
+    volume: "Vol. 11, Issue 10",
+    pages: "pp. 623-633",
+    doi: "10.22214/ijraset.2023.56054",
+    abstract: "Scientists have focused on solar flares because they are violent phenomena that take place on the Sun\'s surface and atmosphere and pose threats to the highly advanced civilization on Earth. Electromagnetic radiation from these eruptions primarily manifests as X-rays, UV light, and sporadically visible light. The energy released by these eruptions is equivalent to that of millions of atomic bombs. The beauty of auroras is enhanced but communication systems are disrupted by geomagnetic storms, which frequently accompany flares via coronal mass ejections (CMEs). Long-distance radio communication is hampered by ionospheric ionization caused by X-rays, and GPS navigation may become less precise, especially in high-latitude areas. Increased radiation levels during solar flares pose a concern to both astronaut safety and satellite operations. Geomagnetic disruptions pose a threat to electrical networks, which could result in widespread blackouts. Complex observatories like the Solar Dynamics Observatory (SDO) and the Solar and Heliospheric Observatory (SOHO) are used to predict and reduce the effects of solar flares. Classifying and analyzing solar flares precisely can assist determine their possible effects, which can range from modest interruptions brought on by Class C flares to major disruptions brought on by X-class flares. This study advances our knowledge of solar-terrestrial interactions and helps with space weather forecasting, both of which are essential in today\'s highly developed society.",
+    keywords: ["Signal Detection", "Astrophysical Data Analysis", "Space Weather Forecasting", "Data Preprocessing", "Noise Reduction"],
     status: "Published",
-    pdfUrl: "https://research.kay-portfolio.com/papers/ai-personalization-ecommerce.pdf",
-    journalUrl: "https://jdcr.example.com/article/123456",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    pdfUrl: "https://www.ijraset.com/best-journal/classification-and-analysis-of-solar-x-ray-monitoring-data-for-intensity-monitoring",
+    journalUrl: "https://www.ijraset.com",
+    image: "https://live.staticflickr.com/65535/50812795278_9c6bcdb6a0_o.png"
   },
   {
-    title: "Cross-Platform User Journey Mapping: A Framework for Omnichannel Product Strategy",
-    authors: ["Kay Johnson", "Dr. Amanda Liu"],
-    journal: "International Conference on Product Management (ICPM)",
-    year: "2023",
-    volume: "Conference Proceedings",
-    pages: "pp. 78-92",
-    doi: "10.1145/icpm.2023.045",
-    abstract: "We present a comprehensive framework for mapping user journeys across multiple digital touchpoints, enabling product managers to optimize omnichannel experiences. The framework was validated across 15 different product categories with measurable improvements in user satisfaction scores.",
-    keywords: ["User Journey Mapping", "Omnichannel Strategy", "Product Management", "Customer Experience", "Digital Transformation"],
-    citations: 23,
-    downloads: 890,
-    status: "Published",
-    pdfUrl: "https://research.kay-portfolio.com/papers/omnichannel-framework.pdf",
-    journalUrl: "https://icpm.example.com/proceedings/2023/045",
-    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
-  },
-  {
-    title: "Data-Driven Feature Prioritization: A Quantitative Approach to Product Roadmap Planning",
-    authors: ["Kay Johnson", "Prof. Robert Kim", "Dr. Lisa Zhang"],
-    journal: "Product Management Quarterly",
-    year: "2022",
-    volume: "Vol. 8, Issue 4",
-    pages: "pp. 234-251",
-    doi: "10.1080/pmq.2022.1987654",
-    abstract: "This paper introduces a novel quantitative framework for feature prioritization that combines user impact metrics, technical complexity assessments, and business value calculations. Our methodology was tested across 50+ product teams, resulting in 40% more accurate roadmap predictions.",
-    keywords: ["Feature Prioritization", "Product Roadmap", "Data-Driven Decisions", "Agile Methodology", "Product Strategy"],
-    citations: 61,
-    downloads: 1750,
-    status: "Published",
-    pdfUrl: "https://research.kay-portfolio.com/papers/feature-prioritization.pdf",
-    journalUrl: "https://pmq.example.com/article/1987654",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
-  },
-  {
-    title: "The Psychology of Mobile App Engagement: Behavioral Triggers and Retention Strategies",
-    authors: ["Kay Johnson", "Dr. Mark Thompson"],
-    journal: "Digital Psychology Review",
-    year: "2022",
-    volume: "Vol. 12, Issue 2",
-    pages: "pp. 89-107",
-    doi: "10.1037/dpr.2022.0234",
-    abstract: "An in-depth analysis of psychological factors that influence mobile app engagement, examining how behavioral triggers can be optimized to improve long-term user retention. The study analyzes data from 2.3 million app sessions across diverse demographics.",
-    keywords: ["Mobile Engagement", "User Psychology", "Behavioral Triggers", "App Retention", "User Experience"],
-    citations: 38,
-    downloads: 1120,
-    status: "Published",
-    pdfUrl: "https://research.kay-portfolio.com/papers/mobile-engagement-psychology.pdf",
-    journalUrl: "https://dpr.example.com/article/0234",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
-  },
-  {
-    title: "Sustainable Product Innovation in Digital Markets: A Stakeholder-Centric Approach",
-    authors: ["Kay Johnson", "Dr. Elena Rodriguez", "Prof. James Wilson"],
-    journal: "Sustainability in Technology",
+    title: "Enhancing OSINT Practices with Eye-Sint: A Multi-Module Intelligence Tool",
+    authors: ["Sneh Bavarva", "Kalp Senva", "Kashish Datta", "Priyank Bhojak"],
+    journal: "Indian Journal of Natural Sciences",
     year: "2024",
-    volume: "Vol. 6, Issue 1",
-    pages: "In Press",
-    doi: "10.1016/j.stech.2024.01.008",
-    abstract: "This research explores sustainable innovation practices in digital product development, proposing a stakeholder-centric framework that balances environmental impact, user needs, and business objectives. Currently under peer review with promising preliminary results.",
-    keywords: ["Sustainable Innovation", "Digital Products", "Stakeholder Management", "Environmental Impact", "Product Strategy"],
-    citations: 0,
-    downloads: 0,
-    status: "In Press",
-    pdfUrl: "https://research.kay-portfolio.com/papers/sustainable-innovation-preprint.pdf",
-    journalUrl: "https://stech.example.com/article/in-press/008",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+    volume: "Vol. 14, Issue 82",
+    pages: "pp. 69096-69104",
+    abstract: "Modern intelligence and cybersecurity heavily rely on open-source intelligence (OSINT). This paper introduces the unique 'Eye-Sint' OSINT tool, designed to revolutionize information acquisition for intelligence analysts and cybersecurity specialists. Eye-Sint combines port scanning, web scraping, and human footprinting. Its web scraping module can collect website headers, performs who is lookups, extracts emails, and many more things. The person footprinting module identifies individuals and extracts data from PDFs and domains. The port scanning module detects open ports for security assessments. We presented a detailed architecture, methodology, and capabilities. Real-world use cases highlight its importance in digital analysis, cybersecurity, and intelligence. We compare Eye-Sint with other OSINT tools, emphasizing its qualities and ethical data collection. This study highlights Eye-Sint's precision, reliability, and its role in improving OSINT in cybersecurity and intelligence.",
+    keywords: ["Web scraping", "Port scanning", "Person footprinting", "Web crawl", "Metadata analysis"],
+    status: "Published",
+    pdfUrl: "https://drive.google.com/file/d/11kwNP_r4h08tmu7-3-8Lp7mAvORLIhaI/view",
+    journalUrl: "https://tnsroindia.org.in",
+    image: "https://tnsroindia.org.in/images/logo.png"
   }
 ];
 
@@ -107,151 +66,79 @@ export default function ResearchPapers() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Published Research</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Academic contributions to product management, user experience, and digital innovation research.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Published Research</h2>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {researchPapers.map((paper, index) => (
             <motion.div
               key={paper.doi}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-effect rounded-xl overflow-hidden"
+              className="glass-effect rounded-xl overflow-hidden group"
+              whileHover={{ y: -5 }}
             >
-              <div className="grid lg:grid-cols-4 gap-6">
-                {/* Image */}
-                <div className="lg:col-span-1">
-                  <img
-                    src={paper.image}
-                    alt={paper.title}
-                    className="w-full h-48 lg:h-full object-cover"
-                  />
+              <div className="relative">
+                <img
+                  src={paper.image}
+                  alt={paper.title}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110 rounded-t-xl"
+                />
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center space-x-2">
+                    <FileText className="h-5 w-5 text-primary" />
+                    <Badge 
+                      variant={paper.status === 'Published' ? 'default' : 'secondary'}
+                      className={paper.status === 'Published' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}
+                    >
+                      {paper.status}
+                    </Badge>
+                    <span className="text-sm text-muted-foreground">{paper.year}</span>
+                  </div>
                 </div>
 
-                {/* Content */}
-                <div className="lg:col-span-3 p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center space-x-2">
-                      <FileText className="h-5 w-5 text-primary" />
-                      <Badge 
-                        variant={paper.status === 'Published' ? 'default' : 'secondary'}
-                        className={paper.status === 'Published' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}
-                      >
-                        {paper.status}
-                      </Badge>
-                    </div>
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                      {paper.status === 'Published' && (
-                        <>
-                          <div className="flex items-center">
-                            <Eye className="h-4 w-4 mr-1" />
-                            {paper.citations} citations
-                          </div>
-                          <div className="flex items-center">
-                            <Download className="h-4 w-4 mr-1" />
-                            {paper.downloads} downloads
-                          </div>
-                        </>
-                      )}
-                    </div>
+                <h3 className="text-xl font-bold mb-3 gradient-text leading-tight">
+                  {paper.title}
+                </h3>
+
+                <div className="space-y-2 mb-4 text-sm text-muted-foreground">
+                  <div className="flex items-center">
+                    <Users className="h-4 w-4 mr-2" />
+                    <span>{paper.authors.join(", ")}</span>
                   </div>
+                </div>
 
-                  <h3 className="text-xl font-bold mb-3 gradient-text leading-tight">
-                    {paper.title}
-                  </h3>
-
-                  <div className="space-y-2 mb-4 text-sm text-muted-foreground">
-                    <div className="flex items-center">
-                      <Users className="h-4 w-4 mr-2" />
-                      <span>{paper.authors.join(", ")}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      <span>{paper.journal} • {paper.year} • {paper.volume} • {paper.pages}</span>
-                    </div>
-                    <div className="text-xs">
-                      <span className="font-medium">DOI:</span> {paper.doi}
-                    </div>
-                  </div>
-
-                  <p className="text-muted-foreground mb-4 line-clamp-3">
-                    {paper.abstract}
-                  </p>
-
-                  <div className="space-y-3 mb-4">
-                    <div>
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Keywords:</h4>
-                      <div className="flex flex-wrap gap-1">
-                        {paper.keywords.map((keyword) => (
-                          <Badge
-                            key={keyword}
-                            variant="outline"
-                            className="text-xs border-primary/30 text-primary"
-                          >
-                            {keyword}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    <Button
-                      size="sm"
-                      className="bg-primary hover:bg-primary/80"
-                      asChild
-                    >
-                      <a href={paper.pdfUrl} target="_blank" rel="noopener noreferrer">
-                        <Download className="mr-2 h-4 w-4" />
-                        Download PDF
-                      </a>
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                      asChild
-                    >
-                      <a href={paper.journalUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        View in Journal
-                      </a>
-                    </Button>
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    size="sm"
+                    className="bg-primary hover:bg-primary/80"
+                    asChild
+                  >
+                    <a href={paper.pdfUrl} target="_blank" rel="noopener noreferrer">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download PDF
+                    </a>
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    asChild
+                  >
+                    <a href={paper.journalUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View in Journal
+                    </a>
+                  </Button>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-12"
-        >
-          <div className="glass-effect rounded-xl p-6 max-w-2xl mx-auto">
-            <h3 className="text-lg font-semibold mb-2 gradient-text">Research Impact</h3>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div>
-                <p className="text-2xl font-bold text-primary">169</p>
-                <p className="text-sm text-muted-foreground">Total Citations</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-secondary">5,010</p>
-                <p className="text-sm text-muted-foreground">Total Downloads</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-accent">5</p>
-                <p className="text-sm text-muted-foreground">Publications</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

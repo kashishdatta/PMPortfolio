@@ -3,10 +3,10 @@ import { Linkedin, Twitter, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/kashishdatta", label: "LinkedIn" },
+  { icon: Twitter, href: "https://x.com/ka_sheeesh", label: "X" },
   { icon: Github, href: "#", label: "GitHub" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Mail, href: "mailto:kashish.datta1@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -20,8 +20,8 @@ export default function Footer() {
           className="flex flex-col md:flex-row justify-between items-center"
         >
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h3 className="text-2xl font-bold gradient-text">Kay</h3>
-            <p className="text-muted-foreground">Product Manager & Creative Problem Solver</p>
+            <h3 className="text-2xl font-bold gradient-text">Kashish</h3>
+            <p className="text-muted-foreground">Product Manager</p>
           </div>
 
           <div className="flex space-x-4">
@@ -51,7 +51,7 @@ export default function Footer() {
           className="border-t border-border mt-8 pt-8 text-center"
         >
           <p className="text-muted-foreground">
-            &copy; 2024 Kay's Portfolio. All rights reserved.
+            &copy; 2025 Kay's Portfolio. All rights reserved.
           </p>
         </motion.div>
       </div>

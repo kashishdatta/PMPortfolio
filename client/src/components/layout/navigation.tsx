@@ -7,9 +7,8 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 const navItems = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#case-studies", label: "Case Studies" },
   { href: "#experience", label: "Experience" },
+  { href: "#portfolio", label: "Portfolio" },
   { href: "#certifications", label: "Certifications" },
   { href: "#research-papers", label: "Research" },
   { href: "#contact", label: "Contact" },
@@ -70,7 +69,7 @@ export default function Navigation() {
             className="text-2xl font-bold gradient-text cursor-pointer"
             onClick={() => handleNavClick("#home")}
           >
-            Kay
+            Kashish
           </motion.div>
           
           {/* Desktop Navigation */}
@@ -81,7 +80,7 @@ export default function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleNavClick(item.href)}
-                className={`text-foreground/80 hover:text-primary transition-colors duration-300 font-medium ${
+                className={`text-foreground/80 hover:text-indigo-600 transition-colors duration-300 font-medium ${
                   activeSection === item.href.slice(1) ? "nav-link-active" : ""
                 }`}
               >

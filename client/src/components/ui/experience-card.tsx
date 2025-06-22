@@ -28,13 +28,12 @@ export default function ExperienceCard({ experience, index, isInView }: Experien
       whileHover={{ y: -5, scale: 1.02 }}
       className="glass-effect p-6 rounded-xl hover:bg-white/20 dark:hover:bg-white/20 transition-all duration-300 h-full"
     >
-      <div className="flex items-start justify-between mb-4">
-        <div className={`w-3 h-3 ${cardColor} rounded-full mt-2`} />
+      <div className="flex items-start justify-end mb-4">
         <span className="text-sm text-muted-foreground">{experience.period}</span>
       </div>
 
-      <h3 className="text-xl font-bold mb-2 gradient-text">{experience.title}</h3>
-      <p className="text-primary dark:text-secondary font-semibold mb-3">{experience.company}</p>
+      <h3 className="text-xl font-bold mb-2" style={{ color: '#3b82f6' }}>{experience.title}</h3>
+      <p className="font-semibold mb-3" style={{ color: '#8b5cf6' }}>{experience.company}</p>
       <p className="text-muted-foreground mb-4 line-clamp-3">{experience.description}</p>
 
       <div className="space-y-4">
@@ -42,7 +41,8 @@ export default function ExperienceCard({ experience, index, isInView }: Experien
           {experience.tags.map((tag) => (
             <Badge
               key={tag}
-              className="bg-primary/20 text-primary border-none"
+              className="border-none hover:bg-pink-800 hover:text-white"
+              style={{ backgroundColor: 'rgba(255, 182, 193, 0.5)', color: '#E91E63' }}
             >
               {tag}
             </Badge>
@@ -59,7 +59,7 @@ export default function ExperienceCard({ experience, index, isInView }: Experien
               transition={{ duration: 0.4, delay: index * 0.1 + achievementIndex * 0.05 }}
               className="flex items-center space-x-2"
             >
-              <CheckCircle className="h-4 w-4 text-primary" />
+              <CheckCircle className="h-4 w-4" style={{ color: '#FFD166' }} />
               <span className="text-sm text-foreground/80">{achievement}</span>
             </motion.div>
           ))}

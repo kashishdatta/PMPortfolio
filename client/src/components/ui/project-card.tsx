@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 interface Project {
   title: string;
   description: string;
-  image: string;
   tags: string[];
   metrics: string;
 }
@@ -27,24 +26,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       whileHover={{ y: -10 }}
       className="project-card glass-effect rounded-xl overflow-hidden group cursor-pointer"
     >
-      <div className="relative overflow-hidden">
-        <motion.img
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-          src={project.image}
-          alt={project.title}
-          className="w-full h-48 object-cover transition-transform duration-300"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileHover={{ opacity: 1, y: 0 }}
-          className="absolute bottom-4 left-4 text-white font-semibold"
-        >
-          {project.metrics}
-        </motion.div>
-      </div>
-      
       <div className="p-6">
         <h3 className="text-xl font-bold mb-3 gradient-text group-hover:text-primary transition-colors">
           {project.title}
