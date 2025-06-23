@@ -189,6 +189,27 @@ export const technicalProjects = [
       image: "/Fraud.jpg",
       icon: Code,
       color: "text-green-500"
+    },
+    {
+      "title": "Movie Recommendation System",
+      "description": "Built an intelligent recommendation system using machine learning to suggest personalized movies based on user preferences and viewing history. Incorporated collaborative and content-based filtering for relevant and diverse recommendations.",
+      "tech": ["Python", "Pandas", "Scikit-learn", "Recommendation Systems", "ML", "Data Analysis"],
+      "features": [
+        "Collaborative filtering based on user similarity",
+        "Content-based filtering using genre, cast, and plot",
+        "Processed movie metadata and user ratings",
+        "Generated personalized watchlists for users"
+  ],
+      "metrics": {
+        "dataset": "100K+ ratings across thousands of movies",
+        "precision": "Achieved 85% recommendation relevance",
+        "coverage": "Served recommendations across 90%+ user profiles"
+  },
+        github: "https://github.com/kashishdatta/MovieSpot",
+        demo: "",
+        image: "/Movie.jpeg",
+        icon: Code,
+        color: "text-green-500"
     }
 ];
 

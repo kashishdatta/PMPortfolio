@@ -100,7 +100,7 @@ export default function AllProjects() {
                       </a>
                     </Button>
                   )}
-                  {(project.title === "Fraud Detection" || project.title === "Toy Story GPT") && (
+                  {(project.title === "Fraud Detection" || project.title === "Toy Story GPT" || project.title === "Movie Recommendation System") && (
                     <Button
                       size="sm"
                       variant="outline"
@@ -118,7 +118,8 @@ export default function AllProjects() {
                     project.title !== "California Wildfire Analysis Dashboard" &&
                     project.title !== "Sales & Customer Insights Dashboard" &&
                     project.title !== "Water Quality Analysis" &&
-                    project.title !== "Fraud Detection" && (
+                    project.title !== "Fraud Detection" &&
+                    project.title !== "Movie Recommendation System" && (
                       <>
                         <Button
                           size="sm"
