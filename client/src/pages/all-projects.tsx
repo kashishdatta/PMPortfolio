@@ -87,7 +87,7 @@ export default function AllProjects() {
                 </div>
 
                 <div className="flex space-x-2">
-                  {project.title !== "Toy Story GPT" && (
+                  {(project.title === "California Wildfire Analysis Dashboard" || project.title === "Sales & Customer Insights Dashboard" || project.title === "Water Quality Analysis") && (
                     <Button
                       size="sm"
                       className="flex-1"
@@ -100,7 +100,7 @@ export default function AllProjects() {
                       </a>
                     </Button>
                   )}
-                  {project.title !== "California Wildfire Analysis Dashboard" && project.title !== "Sales & Customer Insights Dashboard" && (
+                  {(project.title === "Fraud Detection" || project.title === "Toy Story GPT") && (
                     <Button
                       size="sm"
                       variant="outline"
@@ -113,6 +113,37 @@ export default function AllProjects() {
                         Code
                       </a>
                     </Button>
+                  )}
+                  {project.title !== "Toy Story GPT" &&
+                    project.title !== "California Wildfire Analysis Dashboard" &&
+                    project.title !== "Sales & Customer Insights Dashboard" &&
+                    project.title !== "Water Quality Analysis" &&
+                    project.title !== "Fraud Detection" && (
+                      <>
+                        <Button
+                          size="sm"
+                          className="flex-1"
+                          style={{ backgroundColor: '#FFD166', color: '#333' }}
+                          asChild
+                        >
+                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="mr-2 h-4 w-4" />
+                            Demo
+                          </a>
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="flex-1 border-2"
+                          style={{ backgroundColor: 'transparent', borderColor: '#FFD166', color: '#666' }}
+                          asChild
+                        >
+                          <a href={project.github} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2 h-4 w-4" />
+                            Code
+                          </a>
+                        </Button>
+                      </>
                   )}
                 </div>
               </div>

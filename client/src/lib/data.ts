@@ -168,7 +168,28 @@ export const technicalProjects = [
     image: "/Water.jpg",
     icon: Code,
     color: "text-green-500"
-  }
+  },
+  {
+    "title": "Fraud Detection",
+    "description": "Developed a fraud detection system to analyze and flag anomalies in financial transactions using decision trees and supervised learning. Applied Agile methodology to ensure timely delivery and built a foundation for real-time monitoring.",
+    "tech": ["Python", "SQL", "Scikit-learn", "Decision Trees", "Agile", "Data Science"],
+    "features": [
+      "Trained supervised models on labeled transaction data",
+      "Used SQL for efficient data preprocessing and filtering",
+      "Implemented decision tree–based fraud classification",
+      "Designed real-time monitoring architecture"
+  ],
+    "metrics": {
+      "transactions": "1M+ records analyzed",
+      "accuracy": "20% boost in model precision",
+      "false_positives": "15% reduction in false alerts"
+  },
+      github: "https://github.com/kashishdatta/FraudDetection",
+      demo: "",
+      image: "/Fraud.jpg",
+      icon: Code,
+      color: "text-green-500"
+    }
 ];
 
 export const caseStudies = [
