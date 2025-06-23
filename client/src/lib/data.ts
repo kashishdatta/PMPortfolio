@@ -63,27 +63,6 @@ export const technicalProjects = [
     image: "/Portfolio.png",
     icon: Code,
     color: "text-green-500"
-  },
-  {
-    title: "Product Recommendation Engine",
-    description: "Built a collaborative filtering recommendation engine that increased cross-sell revenue by 32% through personalized product suggestions based on user behavior.",
-    tech: ["Python", "TensorFlow", "Apache Spark", "Kafka", "Elasticsearch"],
-    features: [
-      "Collaborative filtering algorithms",
-      "Real-time recommendation updates",
-      "Cold start problem solutions",
-      "Scalable recommendation serving"
-    ],
-    metrics: {
-      accuracy: "92% precision",
-      performance: "32% increase in cross-sell",
-      scale: "1M+ recommendations per hour"
-    },
-    github: "https://github.com/kay/recommendation-engine",
-    demo: "https://demo.kay-portfolio.com/recommendations",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    icon: Brain,
-    color: "text-orange-500"
   }
 ];
 

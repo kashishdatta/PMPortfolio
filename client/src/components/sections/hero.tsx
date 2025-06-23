@@ -32,7 +32,7 @@ export default function Hero() {
   };
 
   const handleViewWork = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleGetInTouch = () => {
