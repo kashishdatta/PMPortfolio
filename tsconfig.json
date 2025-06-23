@@ -14,7 +14,7 @@
     "baseUrl": ".",
     "types": ["node", "vite/client"],
     "outDir": "./server/dist",              // ✅ Output directory
-    "rootDir": "./server",                  // ✅ Required to separate inputs from outputs
+    "rootDir": ".",                  // ✅ Required to separate inputs from outputs
     "noEmit": false,                        // ✅ MUST allow emitting compiled JS
     "paths": {
       "@/*": ["./client/src/*"],
