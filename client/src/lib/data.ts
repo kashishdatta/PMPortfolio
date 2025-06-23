@@ -18,7 +18,7 @@ export const technicalProjects = [
     },
     github: "https://github.com/kashishdatta/FoodFlowPortal",
     demo: "https://drive.google.com/file/d/1HipYfYzp1JS90y5_hVdrU0kbDSkW3A3g/view",
-    image: "/FoodFlow.png",
+    image: "/FoodFlow.jpg",
     icon: Brain,
     color: "text-purple-500"
   },
@@ -39,7 +39,7 @@ export const technicalProjects = [
     },
     github: "https://github.com/kashishdatta/HERMS",
     demo: "https://herms.onrender.com",
-    image: "/HERMS.png",
+    image: "/HERMS.jpeg",
     icon: Database,
     color: "text-blue-500"
   },
@@ -61,6 +61,111 @@ export const technicalProjects = [
     github: "https://github.com/kashishdatta/PMPortfolio",
     demo: "https://kashishdatta.com",
     image: "/Portfolio.png",
+    icon: Code,
+    color: "text-green-500"
+  },
+  {
+    title: "Toy Story GPT",
+    description: "Built a GPT-style language model using PyTorch to generate Toy Story-themed text. Applied self-attention and transformer techniques to enhance character-specific output accuracy.",
+    tech: ["Pytorch", "Transformers", "Deep Learning", "GenAI", "NLP", "Python"],
+    features: [
+    "Custom GPT model for character dialogue",
+    "Self-attention for speaker-specific output",
+    "Script-aware text generation",
+    "Enhanced coherence via multi-head attention"
+  ],
+  metrics: {
+    "accuracy": "25% boost in character dialogue",
+    "coherence": "30% improvement in text flow",
+    "dataset": "200,000+ words from Toy Story scripts"
+  },
+    github: "https://github.com/kashishdatta/GPT_LLM_ToyStory",
+    demo: "https://kashishdatta.com",
+    image: "/ToyStory.jpeg",
+    icon: Code,
+    color: "text-green-500"
+  },
+  {
+    title: "Sales & Customer Insights Dashboard",
+    description: "Built a GPT-style language model using PyTorch to generate Toy Story-themed text. Applied self-attention and transformer techniques to enhance character-specific output accuracy.",
+    tech: ["Pytorch", "Transformers", "Deep Learning", "GenAI", "NLP", "Python"],
+    features: [
+    "Dynamic filters for products and regions",
+    "Interactive views of sales and customer KPIs",
+    "Identification of top buyers and trends",
+    "Seasonal sales pattern visualization"
+  ],
+  metrics: {
+    "sales": "$733K total in 2023 (▲20.4% vs. PY)",
+    "profit": "$93K total profit (▲12.5% vs. PY)",
+    "quantity": "12K units sold (▲26.8% vs. PY)"
+  },
+    github: "https://github.com/kashishdatta/GPT_LLM_ToyStory",
+    demo: "https://public.tableau.com/app/profile/kashish.datta5114/viz/SalesPerformanceandCustomerInsightsDashboard/SalesDashboard#1",
+    image: "/SalesDashboard.png",
+    icon: Code,
+    color: "text-green-500"
+  },
+  {
+    title: "Solar X-Ray Intensity Analysis",
+    description: "Analyzed solar monitor data to identify intensity trends and anomalies. Improved data readability by 50% using Python-based visualizations and Excel, aiding scientific interpretation.",
+    tech: ["Python", "Scientific Analysis", "Machine Learning", "Excel", "Data Visualization", "Pandas"],
+    features: [
+    "Python-based analytics and classification of solar X-ray data",
+    "Converted LightCurve files to CSV for seamless analysis",
+    "React frontend to display solar metrics and trends",
+    "Visualization tools for anomaly detection and pattern tracking"
+  ],
+  metrics: {
+    "speed": "3× faster X-ray data processing",
+    "readability": "50% improvement in data clarity",
+    "delivery": "Completed 2 weeks ahead of deadline"
+  },
+    github: "https://github.com/kashishdatta/solar-xray-monitor",
+    demo: "https://solar-xray-monitor-git-main-aadityasinhjadeja96-gmailcom.vercel.app",
+    image: "/Solar.jpg",
+    icon: Code,
+    color: "text-green-500"
+  },
+  {
+    title: "California Wildfire Analysis Dashboard",
+    description: "Cleaned and transformed wildfire incident data in Python to reveal critical trends in fire frequency, severity, and containment. Built a visualization dashboard to support analysis of large-scale wildfires across California.",
+    tech: ["Python", "Pandas", "Tableau", "Geospatial Analysis", "Data Visualization", "Matplotlib"],
+    features: [
+      "Cleaned and transformed wildfire datasets for analysis",
+      "Visualized fire severity and incident frequency trends",
+      "Mapped burned areas to uncover spatial patterns",
+      "Built reusable pipeline for large-scale incident data"
+  ],
+  metrics: {
+    "total_acres": "11.8M+ acres analyzed",
+    "incidents": "1,873 wildfires tracked",
+    "containment": "276K fire containment records"
+  },
+    github: "",
+    demo: "https://drive.google.com/drive/folders/1M5L_tbB2q_ZG4bfs_znZnWOtY0BqQNFx?usp=sharing",
+    image: "/Fire.png",
+    icon: Code,
+    color: "text-green-500"
+  },
+  {
+  "title": "Water Quality Analysis",
+  "description": "Conducted an in-depth analysis of over two million water quality records from 1903–2025 to classify samples by toxicity and uncover long-term contamination trends across California. Combined machine learning, visualization, and geospatial analysis to support environmental monitoring and public health insights.",
+  "tech": ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Data Analysis", "ML"],
+  "features": [
+    "Classified toxic vs. non-toxic water samples using ML",
+    "Identified top contamination parameters by impact",
+    "Mapped regional toxicity levels across California",
+    "Visualized historical trends in water quality"
+  ],
+  "metrics": {
+    "records": "2M+ samples analyzed",
+    "toxicity": "33.7% toxic samples in LA County",
+    "accuracy": "95% classification accuracy"
+  },
+    github: "",
+    demo: "https://drive.google.com/drive/folders/1M5L_tbB2q_ZG4bfs_znZnWOtY0BqQNFx?usp=sharing",
+    image: "/Water.jpg",
     icon: Code,
     color: "text-green-500"
   }
