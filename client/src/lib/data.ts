@@ -191,6 +191,27 @@ export const technicalProjects = [
       color: "text-green-500"
     },
     {
+      "title": "Optimal Placement of EVCS on Highways",
+  "description": "Developed a geospatial machine learning framework to identify optimal EV charging station (EVCS) locations along highways. Analyzed traffic flow, infrastructure, and geographic constraints to improve accessibility, reduce costs, and support EV adoption.",
+  "tech": ["Python", "ArcGIS", "Linux", "Machine Learning", "Geospatial", "Data Warehousing"],
+  "features": [
+    "Tested 10+ ML algorithms for spatial optimization",
+    "Simulated traffic and driver behavior for demand modeling",
+    "Performed geospatial analysis using ArcGIS and Python",
+    "Integrated multi-state data for infrastructure planning"
+  ],
+  "metrics": {
+    "accuracy": "99% — no battery failures in simulation",
+    "coverage": "300+ sites in 5 states",
+    "locations": "100+ optimal points"
+  },
+        github: "https://github.com/kashishdatta/Optimal-Placement-of-EVCS-on-Highways",
+        demo: "",
+        image: "/EVCS.svg",
+        icon: Code,
+        color: "text-green-500"
+    },
+    {
       "title": "Movie Recommendation System",
       "description": "Built an intelligent recommendation system using machine learning to suggest personalized movies based on user preferences and viewing history. Incorporated collaborative and content-based filtering for relevant and diverse recommendations.",
       "tech": ["Python", "Pandas", "Scikit-learn", "Recommendation Systems", "ML", "Data Analysis"],
@@ -201,7 +222,7 @@ export const technicalProjects = [
         "Generated personalized watchlists for users"
   ],
       "metrics": {
-  "accuracy": "96%",
+  "accuracy": "97%",
   "coverage": "300+ sites in 5 states",
   "locations": "100+ optimal points"
 },
