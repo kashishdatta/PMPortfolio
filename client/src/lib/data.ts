@@ -201,10 +201,10 @@ export const technicalProjects = [
         "Generated personalized watchlists for users"
   ],
       "metrics": {
-        "dataset": "100K+ ratings across thousands of movies",
-        "precision": "Achieved 85% recommendation relevance",
-        "coverage": "Served recommendations across 90%+ user profiles"
-  },
+  "accuracy": "96%",
+  "coverage": "300+ sites in 5 states",
+  "locations": "100+ optimal points"
+},
         github: "https://github.com/kashishdatta/MovieSpot",
         demo: "",
         image: "/Movie.jpeg",
