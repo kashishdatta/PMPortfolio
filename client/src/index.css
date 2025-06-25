@@ -25,29 +25,6 @@
   --radius: 0.5rem;
 }
 
-.dark {
-  --background: 224 71.4% 4.1%; /* #0F172A */
-  --foreground: 210 40% 98%; /* #F8FAFC */
-  --muted: 215 27.9% 16.9%; /* #1E293B */
-  --muted-foreground: 217.9 10.6% 64.9%; /* #94A3B8 */
-  --popover: 224 71.4% 4.1%; /* #0F172A */
-  --popover-foreground: 210 40% 98%; /* #F8FAFC */
-  --card: 215 27.9% 16.9%; /* #1E293B */
-  --card-foreground: 210 40% 98%; /* #F8FAFC */
-  --border: 215 27.9% 16.9%; /* #1E293B */
-  --input: 215 27.9% 16.9%; /* #1E293B */
-  --primary: 346 77% 80%; /* #F1A8D1 - Pastel Pink */
-  --primary-foreground: 224 71.4% 4.1%; /* #0F172A */
-  --secondary: 262 83% 82%; /* #C4B5FD - Pastel Purple */
-  --secondary-foreground: 224 71.4% 4.1%; /* #0F172A */
-  --accent: 173 58% 78%; /* #A7F3D0 - Pastel Green */
-  --accent-foreground: 224 71.4% 4.1%; /* #0F172A */
-  --destructive: 0 62.8% 30.6%; /* #7F1D1D */
-  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
-  --ring: 346 77% 80%; /* #F1A8D1 */
-  --radius: 0.5rem;
-}
-
 @layer base {
   * {
     @apply border-border;
@@ -90,12 +67,6 @@
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.dark .glass-effect {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* Custom animations */
