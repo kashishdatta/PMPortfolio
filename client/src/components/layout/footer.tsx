@@ -3,10 +3,9 @@ import { Linkedin, Twitter, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
-  { icon: Linkedin, href: "https://www.linkedin.com/in/kashishdatta", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/ka_sheeesh", label: "X" },
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Mail, href: "mailto:kashish.datta1@gmail.com", label: "Email" },
+  { icon: Linkedin, href: "https://linkedin.com/in/kashishdatta", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/kashishdatta", label: "GitHub" },
+  { icon: Mail, href: "mailto:dattakashish1@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -31,14 +30,15 @@ export default function Footer() {
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={link.label}
-                >
-                  <link.icon className="h-5 w-5" />
-                </Button>
+                <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <link.icon className="h-5 w-5" />
+                  </Button>
+                </a>
               </motion.div>
             ))}
           </div>
