@@ -87,6 +87,19 @@ export default function AllProjects() {
                 </div>
 
                 <div className="flex space-x-2">
+                  {project.title === "InsightLoop" && (
+                    <Button
+                      size="sm"
+                      className="flex-1"
+                      style={{ backgroundColor: '#FFD166', color: '#333' }}
+                      asChild
+                    >
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
                   {(project.title === "California Wildfire Analysis Dashboard" || project.title === "Sales & Customer Insights Dashboard" || project.title === "Water Quality Analysis") && (
                     <Button
                       size="sm"
@@ -120,7 +133,8 @@ export default function AllProjects() {
                     project.title !== "Water Quality Analysis" &&
                     project.title !== "Fraud Detection" &&
                     project.title !== "Movie Recommendation System" &&
-                    project.title !== "Optimal Placement of EVCS on Highways" && (
+                    project.title !== "Optimal Placement of EVCS on Highways" &&
+                    project.title !== "InsightLoop" && (
                       <>
                         <Button
                           size="sm"

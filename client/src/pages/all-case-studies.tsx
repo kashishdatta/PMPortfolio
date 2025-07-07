@@ -7,6 +7,26 @@ import { Badge } from "@/components/ui/badge";
 
 const caseStudies = [
   {
+    title: "Operationalizing the Voice of the Customer",
+    subtitle: "Reduced synthesis time to 0 hours and improved insight consistency using AI.",
+    description: "Led a product-led build of InsightLoop, a fully automated customer feedback analysis system. Using AI-powered classification and no-code automation, the system pulls monthly feedback, summarizes patterns, and emails executive-ready reports. Designed to replace manual synthesis and empower product teams with continuous insight.",
+    challenge: "PMs spent 5–10 hours monthly summarizing feedback across channels. No consistent structure or ownership, and executives lacked timely visibility into customer pain points.",
+    solution: "Built an end-to-end no-code system using Google Sheets, Zapier, Apps Script, and OpenRouter (GPT-4o) to automatically ingest, classify, summarize, and send feedback reports.",
+    results: [
+      "+60% faster access to customer insights",
+      "100% automation of sentiment, urgency, area & summary tags",
+      "Monthly visibility to execs via email (was ad hoc/infrequent)"
+    ],
+    metrics: {
+      before: "5–10 hours of manual effort",
+      after: "0 hours (fully automated)",
+      impact: "Time saved for strategic action"
+    },
+    tags: ["Product Ops", "NLP", "Feedback Intelligence", "Automation"],
+    image: "https://framerusercontent.com/images/bZtjaioolAHb8z5Kk3LMGwyQw.gif",
+    link: "https://golden-ice-79e.notion.site/Operationalizing-the-Voice-of-the-Customer-226d05394c8480e99305ca514e8b85c5?source=copy_link"
+  },
+  {
     title: "Why Users Drop Off After Day 7 on Duolingo",
     subtitle: "Boosted Day 14 retention by 10 percentage points",
     description: "Led a data-driven investigation into Duolingo's user retention drop, using NLP sentiment analysis, simulated user cohorts, and thematic clustering to uncover why users disengaged after Day 7. Developed and validated a roadmap of five targeted interventions—from compassionate UX nudges to CEFR-linked dashboards.",
@@ -68,6 +88,26 @@ const caseStudies = [
     link: "https://golden-ice-79e.notion.site/Closing-the-AI-Gaps-in-Google-Maps-207d05394c84807ca66af8caf8c4cb79"
   },
   {
+    title: "Why Threads Lost 80% of Users After Its Record-Breaking Launch",
+    subtitle: "Launched fastest-growing app ever — but couldn’t retain users.",
+    description: "Led a product teardown of Instagram Threads, exploring why Meta’s rapid-launch Twitter alternative failed to sustain user engagement. Despite hitting 100M signups in 5 days, Threads lost 80% of its daily active users within a month due to unclear positioning, lack of social features, and weak content loops.",
+    challenge: "Massive top-of-funnel growth, but no reason to stay. Threads shipped without hashtags, search, or trends, leaving users unsure how to engage or build community.",
+    solution: "Analyzed product lifecycle, market context, feature gaps, and cultural dynamics. Recommended five product levers: community scaffolding, creator tools, virality mechanisms, narrative clarity, and Fediverse positioning.",
+    results: [
+      "80% user drop within 30 days",
+      "Avg. session time fell from 19 mins → 3–5 mins",
+      "No hashtags, DMs, or search = no community behavior"
+    ],
+    metrics: {
+      before: "100M signups in 5 days",
+      after: "80% DAU drop in 30 days",
+      impact: "Failed to retain early momentum"
+    },
+    tags: ["Product Positioning", "Retention Loops", "MVP Strategy", "Network Effects"],
+    image: "https://i.pinimg.com/originals/6f/d1/4e/6fd14ef50860ed9dfa130112934177fc.gif",
+    link: "https://golden-ice-79e.notion.site/Why-Threads-Lost-80-of-Users-After-Its-Record-Breaking-Launch-229d05394c848065a82ef8ab43563f3c?source=copy_link"
+  },
+  {
     title: "What If Netflix Actually Got You? (Thanks, AI)",
     subtitle: "Proposed mood-based and intent-aware features to boost retention",
     description: "Researched why users abandon sessions despite strong algorithms. Designed a system of AI-powered enhancements—dynamic UI rows, emotion-based search, and serendipity surfacing—to reduce fatigue, improve personalization, and lift watch-time.",
@@ -88,7 +128,7 @@ const caseStudies = [
     link: "https://golden-ice-79e.notion.site/What-If-Netflix-Actually-Got-You-Thanks-AI-20ad05394c84807ab278dade3c20175c?source=copy_link"
   },
   {
-    title: "What If Netflix Actually Got You? (Thanks, AI)",
+    title: "Plug In, Power Up: How Workday Onboards the World",
     subtitle: "Streamlined onboarding for 2M+ employees through configurable workflows",
     description: "Analyzed Workday's onboarding system across HR, IT, and employee touchpoints. Identified UX friction and scaling strengths, and proposed improvements like AI-powered workflow builders, mobile parity, and document vaults to elevate enterprise onboarding experiences.",
     challenge: "New hires face task overload, while HR admins struggle with complex setup and cross-functional disconnects in large-scale onboarding.",
