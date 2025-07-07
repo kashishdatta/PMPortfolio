@@ -109,8 +109,8 @@ export default function Hero() {
                 >
                   <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full border-4 flex items-center justify-center bg-white overflow-hidden shadow-xl" style={{ borderColor: '#FFD166' }}>
                     <img
-                      src="/kashish-hero.jpg"
-                      alt="Kashish Datta"
+                      src="/ImageLogo.png"
+                      alt="Hero Logo"
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
