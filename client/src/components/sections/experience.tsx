@@ -26,7 +26,7 @@ const experiences = [
     period: "June 2025 - Present",
     description: "Collaborating closely with content creator Yudi J to conceptualize, plan, and deliver a new digital product by combining audience insight with product development and UX strategy.",
     tags: ["Product Strategy", "Pain Point Analysis", "Content Strategy", "Wireframing", "User Stories"],
-    achievements: ["Built product for 100K+ students", "Designed 10+ UX wireframes", "Launched GTM strategy, 1K+ users", "Created 7 modules, 5+ hrs content"]
+    achievements: ["30+ interviews for MVP", "3 pricing models tested", "Prelaunch funnel optimization", "Created 7 modules, 5+ hrs content"]
   },
   {
     title: "Data Scientist",
