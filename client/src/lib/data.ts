@@ -279,7 +279,7 @@ export const caseStudies = [
   {
     title: "How Uber Should Scale Autonomous Mobility (AV) on the Platform",
     subtitle: "Shift from experiments to a measurable, city-by-city rollout that matches UberX on price, reliability, and safety.",
-    description: "A go-to-market and product strategy to scale autonomous rides on Uber via an aggregator model. Outlines a city order of operations, rider experience polish (Prefer AV, parity pricing, safety transparency), partner SLAs for 24/7 coverage and airports, a regulator playbook, and experiments to validate conversion, reliability, and trust—backed by illustrative unit economics.",
+    description: "A go-to-market and product strategy to scale autonomous rides on Uber via an aggregator model. Outlines a city order of operations, rider experience polish, partner SLAs for 24/7 coverage and airports, a regulator playbook, and experiments to validate conversion, reliability, and trust—backed by illustrative unit economics.",
     challenge: "Rider reliability degrades at peaks; marketplace supply is labor-constrained and costly late-night; safety trust requires transparent reporting; and AV vendor rates must improve unit economics without raising prices.",
     solution: "Double-down on aggregation; deepen Austin/Atlanta, re-accelerate PHX/LA/SF. Make autonomy seamless. Negotiate fleet SLAs and 24/7 + airport coverage. A/B: activation, pricing, peak reliability, safety UX. Publish city metrics per Waymo Safety Impact.",
     results: [
