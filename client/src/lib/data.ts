@@ -281,7 +281,7 @@ export const caseStudies = [
     subtitle: "Shift from experiments to a measurable, city-by-city rollout that matches UberX on price, reliability, and safety.",
     description: "A go-to-market and product strategy to scale autonomous rides on Uber via an aggregator model. Outlines a city order of operations, rider experience polish (Prefer AV, parity pricing, safety transparency), partner SLAs for 24/7 coverage and airports, a regulator playbook, and experiments to validate conversion, reliability, and trust—backed by illustrative unit economics.",
     challenge: "Rider reliability degrades at peaks; marketplace supply is labor-constrained and costly late-night; safety trust requires transparent reporting; and AV vendor rates must improve unit economics without raising prices.",
-    solution: "Double-down on aggregation; deepen Austin/Atlanta, re-accelerate PHX/LA/SF. Make autonomy seamless (Prefer AV, parity, safety dashboards). Negotiate fleet SLAs and 24/7 + airport coverage. A/B: activation, pricing, peak reliability, safety UX. Publish city metrics per Waymo Safety Impact.",
+    solution: "Double-down on aggregation; deepen Austin/Atlanta, re-accelerate PHX/LA/SF. Make autonomy seamless. Negotiate fleet SLAs and 24/7 + airport coverage. A/B: activation, pricing, peak reliability, safety UX. Publish city metrics per Waymo Safety Impact.",
     results: [
       "Playbook to reach 10–15% AV share at UberX parity",
       "Reliability: p95 ETA within +10% at launch, trending to parity",
