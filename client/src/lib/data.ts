@@ -261,16 +261,16 @@ export const caseStudies = [
     subtitle: "Reduce decision friction and boost trust with intent-first search, curated answers, and Alexa-powered buying.",
     description: "A product case study on transforming Amazon’s keyword-driven browsing into a conversational, intent-aware shopping experience. Proposes an AI Shopping Concierge, Smarter Search, and Recommendations 2.0—then extends the flow to Alexa for proactive, voice-first reordering and guidance.",
     challenge: "Shoppers face decision fatigue, cluttered search, eroding review trust, generic recommendations, and delivery expectation gaps—leading to slower decisions, lower confidence, and avoidable returns.",
-    solution: "Design an AI concierge that translates natural language needs into precise criteria, narrows to a few curated options with transparent trade-offs, powers intent-first conversational search with clarifying questions, upgrades recommendations to context-aware next best actions, and integrates with Alexa for proactive, voice-driven shopping.",
+    solution: "AI concierge converts natural language to precise criteria, surfaces curated options with clear trade-offs, powers intent-first search and next-best recs, integrated with Alexa for proactive voice shopping.",
     results: [
       "Faster, higher-confidence decisions via curated shortlists and clear trade-offs",
       "Trust uplift through source transparency and review quality signals",
       "Fewer mismatches and returns via intent-aligned product matching"
     ],
     metrics: {
-      before: "Keyword-first search, generic recs, review trust uncertainty, high decision friction",
-      after: "Intent-first conversational search, curated answers, context-aware recs, Alexa as voice concierge",
-      impact: "Projected: +5–10% search→purchase conversion, −8–12% return rate, + trust/NPS"
+      before: "Keyword search, low trust",
+      after: "Intent-first search, Alexa",
+      impact: "Higher conversion, fewer returns"
     },
     tags: ["E-commerce", "AI Concierge", "Search", "Personalization", "Voice Commerce", "Customer Experience"],
     image: "https://i.pinimg.com/originals/dc/2e/38/dc2e38cc3a2824d16cbeceeafed9c979.gif",
@@ -281,16 +281,16 @@ export const caseStudies = [
     subtitle: "Shift from experiments to a measurable, city-by-city rollout that matches UberX on price, reliability, and safety.",
     description: "A go-to-market and product strategy to scale autonomous rides on Uber via an aggregator model. Outlines a city order of operations, rider experience polish (Prefer AV, parity pricing, safety transparency), partner SLAs for 24/7 coverage and airports, a regulator playbook, and experiments to validate conversion, reliability, and trust—backed by illustrative unit economics.",
     challenge: "Rider reliability degrades at peaks; marketplace supply is labor-constrained and costly late-night; safety trust requires transparent reporting; and AV vendor rates must improve unit economics without raising prices.",
-    solution: "Double-down on aggregation (no heavy capex), deepen Austin/Atlanta and re-accelerate PHX/LA/SF Peninsula; make autonomy a seamless choice with Prefer AV, parity pricing, and local safety dashboards; negotiate fleet ramp SLAs and 24/7 + airport coverage; run A/Bs on activation, pricing guardrails, peak reliability, and safety UX; publish city-level metrics aligned to Waymo’s Safety Impact methodology.",
+    solution: "Double-down on aggregation; deepen Austin/Atlanta, re-accelerate PHX/LA/SF. Make autonomy seamless (Prefer AV, parity, safety dashboards). Negotiate fleet SLAs and 24/7 + airport coverage. A/B: activation, pricing, peak reliability, safety UX. Publish city metrics per Waymo Safety Impact.",
     results: [
-      "City playbook to reach 10–15% AV share of eligible trips at UberX price parity",
-      "Reliability targets: p95 ETA within +10% of UberX at launch, trending to parity or better",
-      "Safety transparency: public dashboards vs human baselines using common methodology",
+      "Playbook to reach 10–15% AV share at UberX parity",
+      "Reliability: p95 ETA within +10% at launch, trending to parity",
+      "Experience: ≥4.9 rating, CS contacts at/below human baseline",
     ],
     metrics: {
-      before: "Pilots; human-only supply; volatile peak ETAs; limited safety visibility; margins capped by driver share.",
-      after: "10–15% AV share; UberX price parity; p95 ETA parity; ≥4.9 rating; public safety dashboards.",
-      impact: "+200–600 bps margin; lower late-night ETAs; higher trust & conversion."
+      before: "Pilots; peak ETA volatility",
+      after: "Parity pricing; 10–15% AV",
+      impact: "Margin +200–600 bps"
     },
     tags: ["Autonomous Vehicles", "Product Strategy and Execution", "Go-to-Market"],
     image: "https://cdn.dribbble.com/userupload/42246898/file/original-be3426dd5e13b0f1995fbab0cdd86ba8.gif",
@@ -301,16 +301,16 @@ export const caseStudies = [
     subtitle: "How a startup outshipped the incumbent on direct, citation-first answers—and why it matters.",
     description: "A product strategy teardown comparing Perplexity’s answer-first, citation-rich experience with Google’s AI Overviews. Explores how business model incentives, scale, and risk posture shape product choices—and what this means for the future of search.",
     challenge: "Users are frustrated by ad-heavy, SEO-cluttered SERPs and generic AI summaries. Incumbents face the innovator’s dilemma: moving to direct answers risks ad revenue, publisher relations, and large-scale accuracy.",
-    solution: "A structured comparative analysis across product, tech, and culture: mapping UX differences, incentive conflicts, and operational constraints. Synthesizes lessons for PMs on how to build focused, fast-iterating, answer-first search experiences without legacy baggage.",
+    solution: "Comparative analysis across product, tech, and culture—mapping UX gaps, incentive conflicts, and constraints. Distills lessons for PMs to build fast, focused, answer-first search without legacy baggage.",
     results: [
       "Clear framework: links & ads vs. answers & citations",
       "Deconstructed UX tradeoffs and error/scale risks for incumbents",
       "Actionable playbook for PMs: speed, focus, and business-model alignment"
     ],
     metrics: {
-      before: "Search optimized for links and ad monetization",
-      after: "Citation-first, conversational answers with transparent sources",
-      impact: "Informs roadmap decisions and executive strategy on AI search"
+      before: "Ad-first link SERPs",
+      after: "Citation-first conversational answers",
+      impact: "Sharper AI search strategy"
     },
     tags: ["Product Strategy", "AI Search", "Disruption", "Business Model", "Competitive Differentiation"],
     image: "https://i0.wp.com/annmichaelsen.com/wp-content/uploads/2024/07/perplexity.gif",
