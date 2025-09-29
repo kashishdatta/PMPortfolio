@@ -257,6 +257,66 @@ export const technicalProjects = [
 
 export const caseStudies = [
   {
+    title: "Rethinking Amazon’s Shopping Experience with AI",
+    subtitle: "Reduce decision friction and boost trust with intent-first search, curated answers, and Alexa-powered buying.",
+    description: "A product case study on transforming Amazon’s keyword-driven browsing into a conversational, intent-aware shopping experience. Proposes an AI Shopping Concierge, Smarter Search, and Recommendations 2.0—then extends the flow to Alexa for proactive, voice-first reordering and guidance.",
+    challenge: "Shoppers face decision fatigue, cluttered search, eroding review trust, generic recommendations, and delivery expectation gaps—leading to slower decisions, lower confidence, and avoidable returns.",
+    solution: "Design an AI concierge that translates natural language needs into precise criteria, narrows to a few curated options with transparent trade-offs, powers intent-first conversational search with clarifying questions, upgrades recommendations to context-aware next best actions, and integrates with Alexa for proactive, voice-driven shopping.",
+    results: [
+      "Faster, higher-confidence decisions via curated shortlists and clear trade-offs",
+      "Trust uplift through source transparency and review quality signals",
+      "Fewer mismatches and returns via intent-aligned product matching"
+    ],
+    metrics: {
+      before: "Keyword-first search, generic recs, review trust uncertainty, high decision friction",
+      after: "Intent-first conversational search, curated answers, context-aware recs, Alexa as voice concierge",
+      impact: "Projected: +5–10% search→purchase conversion, −8–12% return rate, + trust/NPS"
+    },
+    tags: ["E-commerce", "AI Concierge", "Search", "Personalization", "Voice Commerce", "Customer Experience"],
+    image: "https://i.pinimg.com/originals/dc/2e/38/dc2e38cc3a2824d16cbeceeafed9c979.gif",
+    link: "https://golden-ice-79e.notion.site/Rethinking-Amazon-s-Shopping-Experience-with-AI-271d05394c8480d6913df817aca5b27b?source=copy_link"
+  },
+  {
+    title: "How Uber Should Scale Autonomous Mobility (AV) on the Platform",
+    subtitle: "Shift from experiments to a measurable, city-by-city rollout that matches UberX on price, reliability, and safety.",
+    description: "A go-to-market and product strategy to scale autonomous rides on Uber via an aggregator model. Outlines a city order of operations, rider experience polish (Prefer AV, parity pricing, safety transparency), partner SLAs for 24/7 coverage and airports, a regulator playbook, and experiments to validate conversion, reliability, and trust—backed by illustrative unit economics.",
+    challenge: "Rider reliability degrades at peaks; marketplace supply is labor-constrained and costly late-night; safety trust requires transparent reporting; and AV vendor rates must improve unit economics without raising prices.",
+    solution: "Double-down on aggregation (no heavy capex), deepen Austin/Atlanta and re-accelerate PHX/LA/SF Peninsula; make autonomy a seamless choice with Prefer AV, parity pricing, and local safety dashboards; negotiate fleet ramp SLAs and 24/7 + airport coverage; run A/Bs on activation, pricing guardrails, peak reliability, and safety UX; publish city-level metrics aligned to Waymo’s Safety Impact methodology.",
+    results: [
+      "City playbook to reach 10–15% AV share of eligible trips at UberX price parity",
+      "Reliability targets: p95 ETA within +10% of UberX at launch, trending to parity or better",
+      "Safety transparency: public dashboards vs human baselines using common methodology",
+    ],
+    metrics: {
+      before: "Pilots; human-only supply; volatile peak ETAs; limited safety visibility; margins capped by driver share.",
+      after: "10–15% AV share; UberX price parity; p95 ETA parity; ≥4.9 rating; public safety dashboards.",
+      impact: "+200–600 bps margin; lower late-night ETAs; higher trust & conversion."
+    },
+    tags: ["Autonomous Vehicles", "Product Strategy and Execution", "Go-to-Market"],
+    image: "https://cdn.dribbble.com/userupload/42246898/file/original-be3426dd5e13b0f1995fbab0cdd86ba8.gif",
+    link: "https://golden-ice-79e.notion.site/How-Uber-Should-Scale-Autonomous-Mobility-AV-on-the-Platform-276d05394c848041b043efacec5d1d7f?source=copy_link"
+  },
+  {
+    title: "Why Hasn't Google built Perplexity?",
+    subtitle: "How a startup outshipped the incumbent on direct, citation-first answers—and why it matters.",
+    description: "A product strategy teardown comparing Perplexity’s answer-first, citation-rich experience with Google’s AI Overviews. Explores how business model incentives, scale, and risk posture shape product choices—and what this means for the future of search.",
+    challenge: "Users are frustrated by ad-heavy, SEO-cluttered SERPs and generic AI summaries. Incumbents face the innovator’s dilemma: moving to direct answers risks ad revenue, publisher relations, and large-scale accuracy.",
+    solution: "A structured comparative analysis across product, tech, and culture: mapping UX differences, incentive conflicts, and operational constraints. Synthesizes lessons for PMs on how to build focused, fast-iterating, answer-first search experiences without legacy baggage.",
+    results: [
+      "Clear framework: links & ads vs. answers & citations",
+      "Deconstructed UX tradeoffs and error/scale risks for incumbents",
+      "Actionable playbook for PMs: speed, focus, and business-model alignment"
+    ],
+    metrics: {
+      before: "Search optimized for links and ad monetization",
+      after: "Citation-first, conversational answers with transparent sources",
+      impact: "Informs roadmap decisions and executive strategy on AI search"
+    },
+    tags: ["Product Strategy", "AI Search", "Disruption", "Business Model", "Competitive Differentiation"],
+    image: "https://i0.wp.com/annmichaelsen.com/wp-content/uploads/2024/07/perplexity.gif",
+    link: "https://golden-ice-79e.notion.site/Why-Hasn-t-Google-Built-Perplexity-23fd05394c8480379bdcfbae82f7cfbf?source=copy_link"
+  },
+  {
     title: "Operationalizing the Voice of the Customer",
     subtitle: "Reduced synthesis time to 0 hours and improved insight consistency using AI.",
     description: "Led a product-led build of InsightLoop, a fully automated customer feedback analysis system. Using AI-powered classification and no-code automation, the system pulls monthly feedback, summarizes patterns, and emails executive-ready reports. Designed to replace manual synthesis and empower product teams with continuous insight.",
@@ -356,5 +416,45 @@ export const caseStudies = [
     tags: ["Product Positioning", "Retention Loops", "MVP Strategy", "Network Effects"],
     image: "https://i.pinimg.com/originals/6f/d1/4e/6fd14ef50860ed9dfa130112934177fc.gif",
     link: "https://golden-ice-79e.notion.site/Why-Threads-Lost-80-of-Users-After-Its-Record-Breaking-Launch-229d05394c848065a82ef8ab43563f3c?source=copy_link"
+  },
+  {
+    title: "What If Netflix Actually Got You? (Thanks, AI)",
+    subtitle: "Proposed mood-based and intent-aware features to boost retention",
+    description: "Researched why users abandon sessions despite strong algorithms. Designed a system of AI-powered enhancements—dynamic UI rows, emotion-based search, and serendipity surfacing—to reduce fatigue, improve personalization, and lift watch-time.",
+    challenge: "Static homepage and unintuitive search caused fatigue, poor discovery, and churn among diverse viewer personas.",
+    solution: "Introduced dynamic UI, mood-based content surfacing, semantic search, and discovery diversity to improve intent capture and emotional engagement.",
+    results: [
+      "25% boost in search conversion",
+      "20% increase in session completions",
+      "15% drop in churn rate"
+    ],
+    metrics: {
+      before: "Endless scrolling, weak emotional context, generic results",
+      after: "Emotionally intelligent UI with dynamic, personalized discovery",
+      impact: "+30% mood-match satisfaction, +25% search-to-play, -15% churn"
+    },
+    tags: ["AI Product Management", "UX & Discovery Design", "Retention Strategy"],
+    image: "https://cdn.dribbble.com/userupload/20143667/file/original-4f4d983cfefc80037fb45acb40f0b742.gif",
+    link: "https://golden-ice-79e.notion.site/What-If-Netflix-Actually-Got-You-Thanks-AI-20ad05394c84807ab278dade3c20175c?source=copy_link"
+  },
+  {
+    title: "Plug In, Power Up: How Workday Onboards the World",
+    subtitle: "Streamlined onboarding for 2M+ employees through configurable workflows",
+    description: "Analyzed Workday's onboarding system across HR, IT, and employee touchpoints. Identified UX friction and scaling strengths, and proposed improvements like AI-powered workflow builders, mobile parity, and document vaults to elevate enterprise onboarding experiences.",
+    challenge: "New hires face task overload, while HR admins struggle with complex setup and cross-functional disconnects in large-scale onboarding.",
+    solution: "Mapped persona journeys, audited core features, and recommended enhancements—progressive disclosure, mobile parity, AI configuration tools, and embedded feedback systems.",
+    results: [
+      "25% faster onboarding completion",
+      "30% fewer support tickets",
+      "18% increase in Day 1 readiness"
+    ],
+    metrics: {
+      before: "Overwhelming task lists, clunky mobile flows, fragmented cross-team sync",
+      after: "Smarter onboarding flows, real-time sync, global template system",
+      impact: "+25% onboarding speed • -30% admin load • +15% readiness at scale"
+    },
+    tags: ["Product Teardown", "Workflow Automation", "Employee Experience"],
+    image: "https://www.paperflite.com/sites/default/files/2021-02/ezgif.com-gif-maker%20%2812%29.gif",
+    link: "https://golden-ice-79e.notion.site/Plug-In-Power-Up-How-Workday-Onboards-the-World-202d05394c84801c9da1cb22cc5e09b9?source=copy_link"
   }
 ]; 
